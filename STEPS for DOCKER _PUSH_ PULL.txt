@@ -1,0 +1,41 @@
+STEP 1 : Open Visual Studio Code
+Step 2: Write your python.py code within your folder
+Step 3: Write the Dockerfile code
+Step 4: Right click on the Dockerfile code and click on Build image
+Step 5: Give a name to the image
+
+
+Step 6: Now GO to COMMAND PROMPT OR Any Terminal
+Step 7: "docker -v"
+Step 8 : "docker images"
+Stpe 9 : docker run <image_name>    ---> to test if the image is running or not.
+Step 10 : to run python command : docker run -ti <image_name>
+          else docker run <image_name>
+
+PUSH image to repository  -- https://www.youtube.com/watch?v=EIHY_CY5J0k
+
+STEP **(main) : LOGIN TO DOCKERHUB by
+docker login 
+
+Step 11 : tag the docker 
+docker tag <image_name>:tag <dockerhub_name>/<image_name> 
+
+Step 12: See if the  <dockerhub_name>/<image_name> is created
+
+Step 13: Now PUSH 
+docker push <dockerhub_name>/<image_name>
+
+Step 14:CHECK THE DOCKER HUB (Refresh)
+
+Step 15 : Now to check you can remove by 
+docker rmi <image_name> from the image list
+
+
+PULL image from repository 
+
+
+Step 16 : Pull the image from Dockerhub
+docker pull <Dockerhub_name>/<image_name>
+
+
+
